@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curio</title>
+    <link rel="stylesheet" href="public/css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <button class="openbtnho" onclick="openNavho()"> <img src="public/img/rozelogo.png" alt="curio"> </button> 
+            <button class="openbtnro" onclick="openNavro()"><h1>Rooster </h1>  </button>  
+            <button class="openbtndo" onclick="openNavdo()"><h1>Jaar overzicht</h1> </button>  
+        </nav>
+
+        <div class="page">
+            <div id="homeSidepanel" class="sidepanelho">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavho()">X</a>
+
+                <div class="inhoudho">
+
+                    <h1>Mijn School</h1>
+
+                    <img src="public/img/school.jpg" >
+
+                    <p>
+                        Dit is de Curio school op de Terheidenseweg. Een
+                        van de huisvestingen van de software development
+                        opleiding. Waar ik nu aan mijn opleiding ben
+                        begonnen. Deze MBO opleiding heeft mij al veel
+                        geleerd in een jaar. Dingen die ik ook gebruik in mijn
+                        vrije tijd. Deze opleiding is niet alleen leerzaam maar
+                        kan ook nog eens erg leuk zijn. Ik ben deze opleiding
+                        begonnen met mijn vrienden, daar hebben we nog
+                        steeds profijt van omdat we vaak samen werken en
+                        leuke dingen kunnen doen tijdens de lessen. 
+                    </p>
+
+                </div>
+
+
+            </div>
+                
+             
+            
+            <script>
+                function openNavho() {
+                document.getElementById("homeSidepanel").style.width = "100%";
+                document.getElementById("roosterSidepanel").style.width = "0";
+                document.getElementById("docentenSidepanel").style.width = "0";
+                }
+                
+                function closeNavho() {
+                document.getElementById("homeSidepanel").style.width = "0";
+                }
+            </script>
+        </div>
+
+
+        <div class="page">
+            <div id="roosterSidepanel" class="sidepanelro">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavro()">X</a>
+                
+                
+               
+                <div class="inhoudro">
+                    <h1>Rooster</h1>
+
+                    <div class="rooster">
+                        <img src="public/img/rooster.png" >
+                        <p>Zo kan een eerste jaars rooster er uit zien. Er zijn veel
+                            vakken die je niet zult herkennen. Hier een lijstje met
+                            wat ze zijn. Zoek ze ook eens op in het rooster!</p>
+                        <div class="list">
+                            <ul>
+                                <li>por: dit zijn de mentoor gesprekken. </li>
+                                <li>mtu: dit zijn de mentoor uren.</li>
+                                <li>eng: dit is gewoon Engels.</li>
+                                <li>ned: dit is gewoon Nederlands.</li>
+                                <li>lab: dit is codelab, een soort huiswerk uur. </li>
+                            </ul>
+
+                            <ul>
+                                <li>pra: dit zijn de praktijk uren.</li>
+                                <li>pro: dit zijn een soort project uren. </li>
+                                <li>nat: dit is native, hier maak je aplicaties. </li>
+                                <li>web: dit zijn lessen waar je websites maakt. </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+                
+            
+            
+            <script>
+                function openNavro() {
+                document.getElementById("homeSidepanel").style.width = "0";
+                document.getElementById("roosterSidepanel").style.width = "100%";
+                document.getElementById("docentenSidepanel").style.width = "0";
+                }
+                
+                function closeNavro() {
+                document.getElementById("roosterSidepanel").style.width = "0";
+                }
+            </script>
+        </div>
+
+        <div class="page">
+            <div id="docentenSidepanel" class="sidepaneldo">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavdo()">X</a>
+                
+                
+                <div class="inhouddo">
+                    <h1>jaar overzicht</h1>
+                        <div class="jaarzicht">
+                            <img src="public/img/jaarzicht.png" >
+                            <p>Dit is een overzicht van de verloop van je
+                                volledige opleiding. De opleiding is
+                                opgedeeld in blokken. Elk blok is een half
+                                jaar. In het begin zul je de denkwijze van
+                                een programmeur leren, dit doe je door
+                                middel van een micro bit. Ook begin je
+                                gelijk met programmeren, wat eng kan
+                                klinken maar vooral heel leuk is. In block D
+                                begin je met je eerste stage, deze duurt
+                                ook maar een half jaar. De school helpt je
+                                erg goed mee naar het zoeken van een
+                                stage plek. Ook in blok G , het langste blok
+                                van een jaar, loop je stage. Na deze stage
+                                doe je examen en kun je hopelijk je
+                                diploma behalen.</p>
+                        </div>
+    
+                </div>
+
+
+
+            </div>
+                
+            
+            
+            <script>
+                function openNavdo() {
+                document.getElementById("homeSidepanel").style.width = "0";
+                document.getElementById("roosterSidepanel").style.width = "0";
+                document.getElementById("docentenSidepanel").style.width = "100%";
+                }
+                
+                function closeNavdo() {
+                document.getElementById("docentenSidepanel").style.width = "0";
+                }
+            </script>
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+        <div class="info">
+            <p>sd4o23A</p>
+            <div style="display: flex;align-items: end;flex-direction: column;">
+                <p>software </p>
+                <p>development</p>
+            </div>
+            <p>Finn Langeveld</p>
+        </div>
+    </footer>
+</body>
+</html>
